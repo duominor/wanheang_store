@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 0.02em;
+}
+
+body{
+    color: #333;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text_60{
+    font-size: 60px;
+}
+
+.text_40{
+    font-size: 40px;
+}
+
+.text_25{
+    font-size: 25px;
+}
+
+.text_22{
+    font-size: 22px;
+}
+
+
+.text_18{
+    font-size: 18px;
+}

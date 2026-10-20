@@ -1,0 +1,408 @@
+.main_header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: whitesmoke;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    width: 250px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+
+.hero {
+    width: 100%;
+    height: calc(100dvh - 100px);
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_slide {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.hero_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.hero_text {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    z-index: 2;
+    color: #fff;
+    letter-spacing: 0.05em;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.hero_text p{
+     margin-bottom: 10px;
+     letter-spacing: 0.03em;
+}
+
+.hero_text h1{
+     font-weight: 500;
+}
+
+
+.ko_title{
+    position: absolute;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    top: 30%;
+    left: 5%;
+    background: rgba(20, 65, 49, 0.5);
+    padding: 5px;
+    border-radius: 2px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-weight: 700;
+
+}
+
+.jp_title{
+    position: absolute;
+    font-family: 'Klee One', cursive;
+    top: 37%;
+    left: 5%;
+    background: rgba(20, 65, 49, 0.5);
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: #fff;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-weight: 700;
+}
+
+
+.hero_swiper .hero_indicator.swiper-pagination {
+    position: absolute;
+    bottom: 50px;
+    right: 4%;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    z-index: 10;
+}
+
+/* 계절 버튼 */
+.hero_indicator button.swiper-pagination-bullet {
+    background: rgba(20, 65, 49, 0.5);
+    border: none;
+    border-radius: 30px;
+    width: 80px;
+    height: 55px;
+    margin: 0 !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* 현재 활성화된 계절 */
+.hero_indicator button.swiper-pagination-bullet-active {
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+}
+
+.content_section{
+    max-width: 1740px;
+    height: 100vh;
+    background-color: rgb(224, 242, 236);
+    margin: 100px auto;
+
+}
+
+.local_rail{
+    max-width: 1740px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #fff;
+}
+
+
+.locla_rail_title{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+
+.main_title{
+    font-family: 'Song Myung', serif;
+
+}
+
+.sub_title{
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.local_rail_con{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.local_rail_card{
+    width: calc((100% - 50px) / 3);
+    height: 500px;
+    flex-shrink: 0;
+    background-color: #F7F5EF;
+    border-radius: 2px;
+    border: 1px solid #C2C2C2;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+
+.local_rail_img_box{
+    width: 100%;
+    height: 270px; 
+    overflow: hidden;
+}
+
+
+.local_rail_img_box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+
+.local_rail_card:hover .local_rail_img_box img {
+    transform: scale(1.08);
+}
+
+
+.local_rail_card_text{
+    padding: 20px;
+    color: #333;
+}
+
+
+.tag{
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.local_rail_but{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 25px;
+}
+
+.local_rail_but img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.local_rail_but img{
+    cursor: pointer;
+}
+
+.local_rail_but span{
+    cursor: pointer;
+    color: #3B6A59;
+}
+
+
+/* 슬라이드가 보이는 영역 */
+.local_rail_viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 4개 페이지가 가로로 배치되는 트랙 */
+.local_rail_track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease;
+}
+
+/* 각각 카드 3개가 들어가는 페이지 */
+.local_rail_page {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+/* 노선도 인디케이터 전체 */
+.local_rail_scrub {
+    width: 100%;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+/* 상단 정보 */
+.rail_scrub_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.rail_scrub_title {
+    font-size: 18px;
+    color: #3B6A59;
+}
+
+.rail_scrub_current {
+    font-size: 18px;
+    color: #3B6A59;
+}
+
+/* 드래그 가능한 노선 */
+.rail_scrub_range {
+    appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width: calc(100% - 60px);
+    height: 4px;
+    margin: 25px 30px 18px;
+    background: linear-gradient(
+        to right,
+        #3B6A59 0%,
+        #3B6A59 var(--rail-progress, 0%),
+        #A8BDB0 var(--rail-progress, 0%),
+        #A8BDB0 100%
+    );
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 드래그 손잡이 */
+.rail_scrub_range::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: #3B6A59;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #3B6A59;
+
+    cursor: grab;
+}
+
+.rail_scrub_range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3B6A59;
+    border: 3px solid #fff;
+    cursor: grab;
+}
+
+/* 기차 아이콘 4개 */
+.rail_scrub_labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rail_scrub_mark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 80px;
+    padding: 5px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+}
+
+/* 기차 이미지 */
+.rail_scrub_mark img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+/* 현재 페이지 */
+.rail_scrub_mark.active {
+    color: #3B6A59;
+    font-weight: 700;
+}
+
+.rail_scrub_mark.active img {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+/* 호버 */
+.rail_scrub_mark:hover img {
+    opacity: 1;
+}
+
+
+
+
+.japan_map {
+    width: 857.5px;
+    height: 750px;
+}
+
+.japan_map img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.main_footer{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+}
