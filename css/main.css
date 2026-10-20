@@ -73,7 +73,7 @@
 .ko_title{
     position: absolute;
     font-family: 'Sofia Sans Condensed', sans-serif;
-    top: 30%;
+    top: 33%;
     left: 5%;
     background: rgba(20, 65, 49, 0.5);
     padding: 5px;
@@ -88,7 +88,7 @@
 .jp_title{
     position: absolute;
     font-family: 'Klee One', cursive;
-    top: 37%;
+    top: 41%;
     left: 5%;
     background: rgba(20, 65, 49, 0.5);
     padding: 2px 5px;
@@ -120,7 +120,7 @@
     border: none;
     border-radius: 30px;
     width: 80px;
-    height: 55px;
+    height: 50px;
     margin: 0 !important;
     padding: 0;
     display: flex;
@@ -128,7 +128,7 @@
     justify-content: center;
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     opacity: 1;
     cursor: pointer;
@@ -142,7 +142,7 @@
 }
 
 .content_section{
-    max-width: 1740px;
+    max-width: 1550px;
     height: 100vh;
     background-color: rgb(224, 242, 236);
     margin: 100px auto;
@@ -150,15 +150,15 @@
 }
 
 .local_rail{
-    max-width: 1740px;
+    width: calc(100% - 40px);
+    max-width: 1550px;
     height: auto;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto 0;
     background-color: #fff;
 }
 
 
-.locla_rail_title{
+.local_rail_title{
     display: flex;
     align-items: baseline;
     gap: 20px;
@@ -178,18 +178,19 @@
 
 .local_rail_con{
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .local_rail_card{
     width: calc((100% - 50px) / 3);
-    height: 500px;
+    /* aspect-ratio: 563 / 500; */
+    height: auto;
     flex-shrink: 0;
     background-color: #F7F5EF;
-    border-radius: 2px;
     border: 1px solid #C2C2C2;
+    border-radius: 2px;
     overflow: hidden;
     position: relative;
 
@@ -232,7 +233,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .local_rail_but img{
@@ -300,8 +301,8 @@
     appearance: none;
     -webkit-appearance: none;
     display: block;
-    width: calc(100% - 60px);
-    height: 4px;
+    width: calc(100% - 50px);
+    height: 3.5px;
     margin: 25px 30px 18px;
     background: linear-gradient(
         to right,
@@ -389,7 +390,7 @@
 
 
 .japan_map {
-    width: 857.5px;
+    width: 763px;
     height: 750px;
 }
 
